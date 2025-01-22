@@ -1,8 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Strada.Database.Repositories;
+using Strada.Database.Repositories.Addresses;
 using Strada.Database.Repositories.Employments;
 using Strada.Database.Repositories.Users;
+using Strada.Domain.Models.Addresses;
 using Strada.Domain.Models.Employments;
 using Strada.Domain.Models.Users;
 
@@ -23,6 +25,7 @@ namespace Strada.Database
         {
             services.AddScoped<IRepository<User>, UserRepository>();
             services.AddScoped<IRepository<Employment>, EmploymentRepository>();
+            services.AddScoped<IRepository<Address>, AddressRepository>();
             return services;
         }
 
@@ -51,6 +54,24 @@ namespace Strada.Database
                             LastName = "Gonzales2"
                         }
                     );
+
+                    context.Employments.AddRange(new Employment()
+                    {
+                        Company = "Company1",
+                        EndDate = DateTime.Now.AddYears(10),
+                        StartDate = DateTime.Now,
+                        MonthsOfExperience = 10,
+                        Salary = 180000,
+                        UserId = 1
+                    });
+
+                    context.Addresses.AddRange(new Address()
+                    {
+                        City = "Sipalay",
+                        Street = "GP Alvarez",
+                        PostCode = 6113,
+                        UserId = 1
+                    });
                 }
 
                 // Save changes to the in-memory database

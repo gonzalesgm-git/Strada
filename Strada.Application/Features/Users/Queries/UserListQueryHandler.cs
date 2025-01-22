@@ -19,6 +19,7 @@ namespace Strada.Application.Features.Users.Queries
         {
            var users = await _user.Query()
                .Include(x => x.Employments)
+               .Include(x => x.Address)
                .ToListAsync(cancellationToken);
 
            var results = users.Select(x => new UserInfo()
@@ -27,6 +28,7 @@ namespace Strada.Application.Features.Users.Queries
                Email = x.Email,
                FirstName = x.FirstName,
                LastName = x.LastName,
+               Address = x.Address,
                Employments = x.Employments.Select(e => new Employment()
                {
                    Id = e.Id,

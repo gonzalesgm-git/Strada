@@ -1,4 +1,5 @@
-﻿using Strada.Domain.Models.Employments;
+﻿using Strada.Domain.Models.Addresses;
+using Strada.Domain.Models.Employments;
 
 namespace Strada.Domain.Models.Users
 {
@@ -11,6 +12,6 @@ namespace Strada.Domain.Models.Users
         public string Email { get; set; }
 
         public List<Employment> Employments { get; set; }
-
+        public Address Address { get; set; }
     }
 }

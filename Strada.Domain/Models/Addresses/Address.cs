@@ -1,9 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Strada.Domain.Models.Users;
 
 namespace Strada.Domain.Models.Addresses
 {
-    public class Address
+    public class Address: IEntity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -11,5 +12,7 @@ namespace Strada.Domain.Models.Addresses
         public string Street { get; set; }
         public string City { get; set; }
         public int? PostCode { get; set; }
+
+        public int UserId { get; set; }
     }
 }

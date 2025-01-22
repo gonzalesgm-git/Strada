@@ -3,7 +3,7 @@ using Strada.Application.Features.Employments.Commands;
 
 namespace Strada.Application.Features.Employments.Validators
 {
-    internal class CreateEmploymentCommandValidator : AbstractValidator<CreateEmploymentCommand>
+    public class CreateEmploymentCommandValidator : AbstractValidator<CreateEmploymentCommand>
     {
         public CreateEmploymentCommandValidator()
         {
