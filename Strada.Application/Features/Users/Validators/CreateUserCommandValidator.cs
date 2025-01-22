@@ -1,5 +1,4 @@
 ﻿using FluentValidation;
-using Microsoft.EntityFrameworkCore;
 using Strada.Application.Features.Users.Commands;
 using Strada.Database.Repositories;
 using Strada.Domain.Models.Users;

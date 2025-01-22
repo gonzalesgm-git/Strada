@@ -1,6 +1,7 @@
 ﻿using Strada.Domain.Models.Addresses;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Strada.Domain.Models.Employments;
 
 namespace Strada.Domain.Models.Users
 {
@@ -13,6 +14,7 @@ namespace Strada.Domain.Models.Users
         public string LastName { get; set; }
         public string Email { get; set; }
         public Address Address { get; set; }
+        public List<Employment> Employments { get; set; }
 
     }
 }

@@ -5,7 +5,7 @@ using Strada.Domain.Models.Users;
 
 namespace Strada.Application.Features.Users.Validators
 {
-    internal class UpdateUserCommandValidator : AbstractValidator<CreateUserCommand>
+    public class UpdateUserCommandValidator : AbstractValidator<CreateUserCommand>
     {
         public UpdateUserCommandValidator(IRepository<User> user)
         {

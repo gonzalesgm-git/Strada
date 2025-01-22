@@ -2,15 +2,10 @@
 
 namespace Strada.Database.Repositories.Users
 {
-    public class UserRepository: Repository<User>, IUserRepository
+    public class UserRepository: Repository<User>
     {
         public UserRepository(StradaDbContext context): base(context)
         {
         }
-    }
-
-    public interface IUserRepository
-    {
-
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Strada.Database.Repositories;
+using Strada.Database.Repositories.Employments;
 using Strada.Database.Repositories.Users;
+using Strada.Domain.Models.Employments;
 using Strada.Domain.Models.Users;
 
 namespace Strada.Database
@@ -20,6 +22,7 @@ namespace Strada.Database
         public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IRepository<User>, UserRepository>();
+            services.AddScoped<IRepository<Employment>, EmploymentRepository>();
             return services;
         }
 
