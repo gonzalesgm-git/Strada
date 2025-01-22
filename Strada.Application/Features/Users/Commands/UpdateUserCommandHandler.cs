@@ -2,11 +2,6 @@
 using Strada.Database.Repositories;
 using Strada.Domain.Models;
 using Strada.Domain.Models.Users;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Strada.Application.Features.Users.Commands
 {

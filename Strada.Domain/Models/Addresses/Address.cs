@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using Strada.Domain.Models.Users;
 
 namespace Strada.Domain.Models.Addresses
 {

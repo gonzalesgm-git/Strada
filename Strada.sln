@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strada.Database", "Strada.D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Strada.API", "Strada.API\Strada.API.csproj", "{1F6E2B79-64BF-4A5C-85E6-862B19DA5FEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strada.Tests", "Strada.Tests\Strada.Tests.csproj", "{A0A70B31-3A9F-4FD0-94D9-883262372BEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1F6E2B79-64BF-4A5C-85E6-862B19DA5FEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F6E2B79-64BF-4A5C-85E6-862B19DA5FEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F6E2B79-64BF-4A5C-85E6-862B19DA5FEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0A70B31-3A9F-4FD0-94D9-883262372BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A70B31-3A9F-4FD0-94D9-883262372BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A70B31-3A9F-4FD0-94D9-883262372BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A70B31-3A9F-4FD0-94D9-883262372BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

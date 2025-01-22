@@ -1,8 +1,4 @@
-﻿using FluentValidation;
-using FluentValidation.AspNetCore;
-using Newtonsoft.Json;
-
-namespace Strada.API
+﻿namespace Strada.API
 {
     public static class MvcBuilder
     {

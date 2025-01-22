@@ -1,10 +1,10 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
-using Strada.Domain.Models.Users;
 using Strada.Application.Features.Users.Queries;
 using Strada.Domain.Models;
 using Strada.Application.Features.Users.Commands;
+using Strada.Domain.Models.Users.dtos;
 
 namespace Strada.API.Controllers.Users
 {
@@ -17,7 +17,7 @@ namespace Strada.API.Controllers.Users
         }
 
         [HttpGet]
-        [ProducesResponseType(typeof(List<UserInfo>), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(List<UserDto>), (int)HttpStatusCode.OK)]
         public Task<IActionResult> Get() => SendAsync(new UserListQuery());
 
         [HttpPost]

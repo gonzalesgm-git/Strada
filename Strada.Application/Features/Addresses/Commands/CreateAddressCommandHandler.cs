@@ -1,13 +1,6 @@
 ﻿using MediatR;
-using Strada.Application.Features.Employments.Commands;
 using Strada.Database.Repositories;
-using Strada.Domain.Models.Employments;
 using Strada.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Strada.Domain.Models.Addresses;
 
 namespace Strada.Application.Features.Addresses.Commands
